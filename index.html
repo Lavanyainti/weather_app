@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <div class="main-container">
+       <header class="input-container">
+         <input type="text" class="city-input" placeholder="Search City">
+         <button class="search-btn"><span class="material-symbols-outlined">
+            search </span></button>
+       </header>
+       <section class="weather-info" style="display: none;">
+        <div class="location-date-container">
+            <div class="location">
+                <span class="material-symbols-outlined">
+                    location_on
+                    </span>
+                 <h4 class="country-txt">Hyderabad</h4>  
+            </div>
+               <h4 class="current-date-txt">Thu, 12 Dec</h4>
+        </div>
+        <div class="weather-summary-container">
+            <img src="images/weather-sunny.png" alt="" class="weather-img" style="width: 120px; height: 120px;">
+             <div class="weather-summary-info">
+                <h1 class="temp-txt">29 &deg;C</h1>
+                <h3 class="condition-txt regular-text">Clouds</h3>
+             </div>
+        </div>
+        <div class="weather-conditions-container">
+            <div class="condition-item">
+                    <span class="material-symbols-outlined" style="color: white;">
+                     water_drop
+                    </span>
+                    <div class="condition-info">
+                      <h3 class="regular-text">Humidity</h3>
+                      <h4 class="humidity-value regular-text">55%</h4>
+                    </div>
+            </div>  
+            <div class="condition-item">  
+                    <span class="material-symbols-outlined">
+                      air
+                    </span>
+                    <div class="condition-info">
+                        <h3 class="regular-text" >Wind Speed</h3>
+                        <h4 class="wind-value regular-text">2 M/S</h4>
+                    </div>  
+            </div>
+        </div>
+         <div class="forecast-item-container">
+            <div class="forecast-item">
+                <h5 class="forecast-item-date regular-text">12 Dec</h5>
+                 <img src="images/weather-sunny.png" alt="#" class="forecast-item-img">
+                <h5 class="forecast-iten-temp">29 &deg;C</h5>
+            </div>
+            <div class="forecast-item">
+                <h5 class="forecast-item-date regular-text">12 Dec</h5>
+                 <img src="images/weather-sunny.png" alt="#" class="forecast-item-img">
+                <h5 class="forecast-iten-temp">29 &deg;C</h5>
+            </div>
+            <div class="forecast-item">
+                <h5 class="forecast-item-date regular-text">12 Dec</h5>
+                 <img src="images/weather-sunny.png" alt="#" class="forecast-item-img">
+                <h5 class="forecast-iten-temp">29 &deg;C</h5>
+            </div>
+            <div class="forecast-item">
+                <h5 class="forecast-item-date regular-text">12 Dec</h5>
+                 <img src="images/weather-sunny.png" alt="#" class="forecast-item-img">
+                <h5 class="forecast-iten-temp">29 &deg;C</h5>
+            </div>
+         </div>
+    </section>
+
+      <section class="search-city section-message" >
+        <img src="images/weather-search.webp" alt="" class="message-img">
+        <div>
+            <h1 class="regular-text">Search City</h1>
+            <h4 class="regular-text">Find out the weather conditions of your Specified city</h4>
+        </div>
+       </section>
+        
+       <section class="not-found section-message" style="display: none;">
+        <img src="images/404.png" alt="" class="message-img">
+        <div>
+            <h1 class="regular-text">City Not Found</h1>
+            <h4 class="regular-text">Please enter the valid city name</h4>
+
+        </div>
+       </section>
+
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
